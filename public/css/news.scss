@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    .news-nav {
+        position: relative;
+        min-width: 320px;
+        height: 44px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        background: #3e98f0 url(../img/bg-news-logo.png) no-repeat center 6px/88px auto;
+        .toolbar-btn {
+            display: block;
+            border: 0;
+            width: 34px;
+            height: 100%;
+            font-size: 15px;
+            line-height: 44px;
+            cursor: pointer;
+            float: left;
+        }
+        .news-toolbar-l {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow: hidden;
+            .btn-baidu {
+                background: url(../img/bg-new-toolbar.png) no-repeat 0 5px/40px 500px;
+            }
+            .btn-userhome {
+                background: url(../img/bg-new-toolbar.png) no-repeat 0 -462px/40px 500px;
+            }
+        }
+        .news-toolbar-r {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .btn-search {
+            background: url(../img/bg-new-toolbar.png) no-repeat 0 -160px/40px 500px;
+        }
+        .btn-subscribe {
+            background: url(../img/bg-new-toolbar.png) no-repeat 0 -105px/40px 500px;
+        }
+    }
+    .news-navigator {
+        position: relative;
+        background-color: #3e98f0;
+        overflow: hidden;
+        z-index: 2;
+        color: #fff;
+        .divider {
+            height: 1px;
+            margin: 0 10px;
+            background-color: #5dabf0;
+        }
+        .navigator-tool {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            li {
+                height: 33px;
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 400;
+                text-align: center;
+                float: left;
+                list-style: none;
+                flex: 1;
+                -webkit-flex: 1;
+                -moz-flex: 1;
+                -o-flex: 1;
+                -ms-flex: 1;
+                cursor: pointer;
+                .cur {
+                    border-bottom: 1px solid #fff;
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+}
+
+article {
+    .news-container {
+        .news-main {
+            position: relative;
+            border-bottom: 1px solid #f6f6f6;
+            overflow: hidden;
+            padding: 10px 0;
+            margin: 0 10px;
+            a {
+                display: block;
+                height: 68px;
+                width: 95px;
+                text-align: center;
+                overflow: hidden;
+                border: 1px solid #e8e8e8;
+                float: left;
+                margin-left: 0;
+                margin-right: 10px;
+                position: relative;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .content {
+                .newstitle {
+                    height: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #262b31;
+                    margin: -1px 0 4px 0;
+                    overflow: hidden;
+                }
+                .newscontent {
+                    height: 20px;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #b8bac0;
+                    font-weight: 400;
+                    overflow: hidden;
+                }
+                .newscontent {
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: #b8bac0;
+                    font-weight: 400;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    .ui-refresh {
+        height: 36px;
+        line-height: 36px;
+        background-color: #f8f9fa;
+        text-align: center;
+        border: 1px solid #ebedef;
+        border-radius: 1px;
+        color: #545454;
+        margin: 14px 40px;
+    }
+}
